@@ -40,7 +40,8 @@
     "zombie": "^4.2.1"
   },
   "scripts": {
-    "test": "node node_modules/cucumber/bin/cucumber.js"
+    "test": "node node_modules/cucumber/bin/cucumber.js",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
