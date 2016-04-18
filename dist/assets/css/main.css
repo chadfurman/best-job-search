@@ -6118,6 +6118,13 @@ a.bg-danger:focus, a.bg-danger:hover {
       -ms-flex-wrap: nowrap;
           flex-wrap: nowrap;
 }
+@media screen and (max-width: 800px) {
+  .row.row-nowrap {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+}
 
 .column-header {
   margin: 0 0 1rem 0;

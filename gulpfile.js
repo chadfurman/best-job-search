@@ -17,7 +17,8 @@ var gulp = require('gulp'),
 
 var sassPaths = [
   'src/styles',
-  'bower_components'
+  'bower_components',
+  'bower_components/bootstrap'
 ];
 var styles = [
   'src/styles/main.scss'
@@ -27,7 +28,7 @@ var bower_scripts = [
   'bower_components/tether/dist/js/tether.min.js',
   'bower_components/bootstrap/dist/js/bootstrap.min.js',
   'bower_components/mithril/mithril.min.js',
-]
+];
 
 gulp.task('js', function (watch) {
   var bundler = watchify(browserify('./src/js/app.js', { debug: true }).transform(babel));

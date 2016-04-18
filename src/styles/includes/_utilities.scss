@@ -1,5 +1,9 @@
 .row.row-nowrap {
   flex-wrap: nowrap;
+
+  @media screen and (max-width: $medium-break) {
+    flex-wrap: wrap;
+  }
 }
 
 .column-header {
