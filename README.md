@@ -19,3 +19,10 @@ run tests with:
 npm test
 ```
 
+### Development
+
+If you wish to make changes, be sure to rebuild assets by running:
+
+```
+gulp
+```
