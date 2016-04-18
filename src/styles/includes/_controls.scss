@@ -1,0 +1,29 @@
+.controls {
+  display: flex;
+  flex-direction: column;
+
+  > *:not(.column-header) {
+    margin: 0 2rem;
+  }
+
+  .column-header {
+    padding-left: 2rem;
+  }
+
+  .form-group {
+    margin-bottom: 1rem;
+  }
+
+  .checkbox input[type='checkbox'] {
+    margin-left: 0;
+  }
+
+  @media screen and (max-width: $large-break) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: $large-break) {
+    height: 100vh;
+    overflow: auto;
+  }
+}

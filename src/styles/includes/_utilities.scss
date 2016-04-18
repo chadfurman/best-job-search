@@ -1,0 +1,25 @@
+.row.row-nowrap {
+  flex-wrap: nowrap;
+}
+
+.column-header {
+  margin: 0 0 1rem 0;
+  padding: .5rem;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-shrink: 0;
+  background-color: $header-bg-color;
+}
+
+.column-sub-header {
+  font-style: italic;
+  color: $gray-light;
+  display: flex;
+  flex-shrink: 0;
+
+  h6 {
+    font-size: .8rem;
+  }
+}
