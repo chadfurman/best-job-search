@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 
-app.set('port', (process.env.PORT || 5000));
+app.set('port', (process.env.PORT || 24220));
 
 app.get('/', function(request, response) {
     response.sendFile('/index.html');
