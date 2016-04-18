@@ -1,7 +1,7 @@
 module.exports = function() {
   this.When(/^I click the search button$/, function (callback) {
     // Write code here that turns the phrase above into concrete actions
-      this.browser.click('#search-button', callback);
+    this.browser.click('#search-button', callback);
   });
 
   this.Then(/^I should see search results$/, function (callback) {

@@ -1,10 +1,18 @@
 var zombie = require('zombie');
 function World() {
-  zombie.localhost('themuse.dev');
-  this.browser = new zombie(); // this.browser will be available in step definitions
+  zombie.localhost('localhost', 5000);
+//  zombie.localhost('themuse.dev');
+  this.browser = new zombie({ waitDuration: 30*1000 }); // this.browser will be available in step definitions
 
-  this.visit = function (url, callback) {
-    this.browser.visit(url, callback);
+  this.waitForPage = function(callback) {
+    // Wait until page is loaded
+    function pageLoaded(window) {
+      return window.document.querySelector(".container-fluid");
+    }
+
+    browser.wait(pageLoaded, function() {
+      callback();
+    });
   };
 }
 
